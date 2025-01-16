@@ -1,3 +1,4 @@
 # Favorites
-- favorite color is # pink
-- favorite singer/songwriter is # SZA
+- favorite color is ***Pink***
+- favorite singer/songwriter is ***SZA***
+
