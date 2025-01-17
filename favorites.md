@@ -1,4 +1,17 @@
-# Favorites
-- favorite color is **Pink**
-- favorite singer/songwriter is **SZA**
+# Favorite Things
 
+**Favorite Artists**
+	- SZA
+	- Giveon
+	- Mariah the Scientist
+
+**Favorite Animals** 
+	- Bears
+	- Cows
+
+**Favorite Show**
+	- Criminal Minds
+	
+**Favorite Color**
+	- pink
+	
