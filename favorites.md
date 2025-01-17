@@ -1,17 +1,16 @@
 # Favorite Things
 
 **Favorite Artists**
-	+SZA
-	+Giveon
-	+Mariah the Scientist
++ SZA
++ Giveon
++ Mariah the Scientist
 
 **Favorite Animals** 
-	+Bears
-	+Cows
++ Bears
++ Cows
 
 **Favorite Show**
-	+Criminal Minds
++ Criminal Minds
 	
 **Favorite Color**
-	+pink
-	
++ Pink
