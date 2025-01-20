@@ -1,0 +1,1 @@
+jennahussein@Jennas-MBP-5 data % gunzip -c dictionary.gz|grep "r" | grep -E "^[rzonica]{4,}$"|wc -l
