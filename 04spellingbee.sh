@@ -1,1 +1,1 @@
-gunzip -c dictionary.gz|grep "r" | grep -E "^[rzonica]{4,}$"|wc -l
+gunzip -c ~/Code/MCB185/data/dictionary.gz|grep "r"|grep -E "^[rzonica]{4,}$"|wc -l
