@@ -12,5 +12,6 @@
 **Favorite Show**
 + Criminal Minds
 	
-**Favorite Color**
+**Favorite Color(s)**
 + Pink
++ Green
