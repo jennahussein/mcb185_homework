@@ -36,6 +36,7 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ I met Namra on Thursday
 - Week 3
 	+ Asked and answered a question in Discord
+	+ Attended class on Tuesday
 - Week 4
 - Week 5
 - Week 6
