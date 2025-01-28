@@ -40,6 +40,7 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Attended class on Thursday
 	+ Met Alex on Thursday
 - Week 4
+	+ Attended class on Tuesday
 - Week 5
 - Week 6
 - Week 7
