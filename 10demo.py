@@ -212,12 +212,12 @@ def specificity(tn, fp):
 print(specificity(3, 9))
 
 #f1 score is 2 x specificity (n) x sensitivity (m)
-def formula1(tp, tn, fp, fn):
-	spec = (tp)/(tp + fn)
-	sens = (tn)/(tn + fp)
+def f1(tp, tn, fp, fn):
+	sens = (tp)/(tp + fn)
+	spec = (tn)/(tn + fp)
 	return (2 * spec * sens)/(spec + sens)
 	
-print(formula1(6, 12, 9, 4))
+print(f1(6, 12, 9, 4))
 
 def shannon_entropy(A, C, G, T):
 	total = A + C + G + T
