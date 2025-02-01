@@ -43,6 +43,8 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Attended class on Tuesday
 	+ Attended class on Thursday
 	+ Joined Coderie on Discord on Thursday
+	+ Met Kristy at the Coderie
+	+ Asked a question in Discord
 - Week 5
 - Week 6
 - Week 7
