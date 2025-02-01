@@ -30,21 +30,25 @@ more than one point per category. There is a maximum of 5 points each week.
 - Week 1
 	+ Attended class on Tuesday
 	+ Attended class on Thursday
+	+ Total 2 points
 - Week 2
 	+ Attended class on Tuesday
 	+ Attended class on Thursday
 	+ I met Namra on Thursday
+	+ Total 3 points
 - Week 3
 	+ Asked and answered a question in Discord
 	+ Attended class on Tuesday
 	+ Attended class on Thursday
 	+ Met Alex on Thursday
+	+ Total 4 points
 - Week 4
 	+ Attended class on Tuesday
 	+ Attended class on Thursday
 	+ Joined Coderie on Discord on Thursday
 	+ Met Kristy at the Coderie
 	+ Asked a question in Discord
+	+ Total 5 points
 - Week 5
 - Week 6
 - Week 7
