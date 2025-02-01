@@ -8,7 +8,7 @@ def oligo_mt(A, C, G, T):
 	total = A + C + G + T
 	
 	if total <= 13: return tm_short
-	else:			return tm_long
+	else:		return tm_long
 	
 print (oligo_mt(1, 2, 3, 4))
 print(oligo_mt(5, 7, 3, 4))
