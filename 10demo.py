@@ -227,7 +227,7 @@ def shannon_entropy(A, C, G, T):
 	prob_G = G/total
 	prob_T = T/total
 	
-	if   A > 0:	entropy = -prob_A * math.log2(prob_A)
+	if A > 0: entropy = -prob_A * math.log2(prob_A)
 	elif C > 0: entropy = -prob_C * math.log2(prob_C)
 	elif G > 0: entropy = -prob_G * math.log2(prob_G)
 	elif T > 0: entropy = -prob_T * math.log2(prob_T)
