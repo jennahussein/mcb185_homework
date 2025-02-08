@@ -38,8 +38,3 @@ for dc in range(1, 20, 1):
 		if r1 >= dc and r2 >= dc: dis +=1
 		if r1 >= dc or r2 >= dc: adv +=1
 	print(dc, 'pn', nor/trials, 'pd', dis/trials, 'pa', adv/trials)
-
-		
-	
-	
-
