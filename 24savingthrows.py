@@ -38,38 +38,6 @@ for dc in range(1, 20, 1):
 		if r1 >= dc and r2 >= dc: dis +=1
 		if r1 >= dc or r2 >= dc: adv +=1
 	print(dc, 'pn', nor/trials, 'pd', dis/trials, 'pa', adv/trials)
-	
-trials = 1000000
-dc = 10
-sides = 20
-
-for dc in range(1, 20, 1):
-	nor = 0
-	adv = 0
-	dis = 0
-	for i in range(trials):
-		r1 = random.randint(1, sides)
-		r2 = random.randint(1, sides)
-		if r1 >= dc: nor += 1
-		if r1 >= dc and r2 >= dc: dis +=1
-		if r1 >= dc or r2 >= dc: adv +=1
-	print(dc, 'pn', nor/trials, 'pd', dis/trials, 'pa', adv/trials)
-	
-trials = 1000000
-dc = 15
-sides = 20
-
-for dc in range(1, 20, 1):
-	nor = 0
-	adv = 0
-	dis = 0
-	for i in range(trials):
-		r1 = random.randint(1, sides)
-		r2 = random.randint(1, sides)
-		if r1 >= dc: nor += 1
-		if r1 >= dc and r2 >= dc: dis +=1
-		if r1 >= dc or r2 >= dc: adv +=1
-	print(dc, 'pn', nor/trials, 'pd', dis/trials, 'pa', adv/trials)
 
 		
 	
