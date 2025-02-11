@@ -15,7 +15,7 @@ print(is_prime(5))
 for i in range(51, 0, -2):
 	if is_prime(n) == True: 
 		print(i, "*")
-	else: None
+	else: 
 	
 if is_prime == True:
 	print(i,"*")
