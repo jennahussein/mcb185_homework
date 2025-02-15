@@ -56,6 +56,12 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Did a demo in class
 	+ Total 4 points
 - Week 6
+	+ Attended class on Tuesday
+	+ Attended class on Thursday
+	+ Asked a question in Discord
+	+ Met Orlando in class on Thursday
+	+ Joined Coderie in Discord on Thursday
+	+ Total 5 points
 - Week 7
 - Week 8
 - Week 9
