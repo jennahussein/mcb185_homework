@@ -15,9 +15,9 @@ print('   ', end='')
 for nt in alphabet: print(nt, end='  ')
 print()
 
-for i in range(len(alphabet)): 
-	print(alphabet[i], end=' ')
-	for j in range(i, len(alphabet)):
-		if alphabet[i] == alphabet[j]: print(matches, end=' ')
+for nt1 in alphabet: 
+	print(nt1, end=' ')
+	for nt2 in alphabet:
+		if nt1 == nt2: print(matches, end=' ')
 		else:          print(mismatch, end=' ')
 	print()
