@@ -71,5 +71,13 @@ more than one point per category. There is a maximum of 5 points each week.
 - Week 8
 	+ Attended class on Tuesday
 	+ Attended class on Thursday
+	+ Joined Coderie in Discord
+	+ Total 3 points
 - Week 9
+	+ Attended class on Tuesday
+	+ Asked a question in class on Tuesday
+	+ Asked a question in Discord
+	+ Attended class on Thursday
+	+ Joined a Coderie in Discord on Thursday
+	+ Total = 5 points
 - Week 10
