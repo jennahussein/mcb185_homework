@@ -55,4 +55,13 @@ for val in vals:
 variance = variance_tot/len(vals)
 stdev = math.sqrt(variance)
 print(f'{stdev:.4f}') 
-	
+
+half_length = total / 2
+totalsum = 0
+
+for val in vals:
+	totalsum += val
+	if half_length <= totalsum:
+		n50 = val
+		print(n50)
+		break
