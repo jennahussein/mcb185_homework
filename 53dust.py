@@ -1,6 +1,5 @@
 #53dust.py by Jenna Hussein
 
-#idk how to soft mask it
 
 import mcb185
 import argparse
