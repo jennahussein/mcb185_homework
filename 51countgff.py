@@ -1,4 +1,4 @@
-#countgff.py by Jenna Hussein
+#51countgff.py by Jenna Hussein
 
 import gzip
 import sys
@@ -18,3 +18,4 @@ alt way to do lines 12 and 13:
 
 if feature not in count: count[feature] = 1
 else:                    count[feature] += 1
+"""
