@@ -1,5 +1,7 @@
 #53dust.py by Jenna Hussein
 
+#idk how to soft mask it
+
 import mcb185
 import argparse
 import sys
@@ -32,7 +34,7 @@ for defline, seq in mcb185.read_fasta(arg.file):
 				h -= prob * math.log2(prob)
 		if h < arg.entropy:
 			for j in range(i, i + arg.size):
-				mask[j] = 'N'
+				mask[j] = seq[j].lower()
 
 print('>', defline, sep='')
 masked_sequence = ''.join(mask)
