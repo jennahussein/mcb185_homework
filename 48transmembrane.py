@@ -10,10 +10,9 @@ s = length of the sequence
 kdt = kyte-doolittle hydrophobicity threshhold
 """
 
-def hydrophobic(seq, s, kdt, beg, end):
-	subseq = seq[beg:end + 1]
-	for i in range(0, len(subseq) - s + 1):
-		p = subseq[i:i+s]
+def hydrophobic(seq, s, kdt):
+	for i in range(0, len(seq) - s + 1):
+		p = seq[i:i+s]
 		score = 0
 		if 'P' in p: continue
 		for aa in p:
@@ -43,8 +42,8 @@ def hydrophobic(seq, s, kdt, beg, end):
 
 counts = 0
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
-	signal_pep = hydrophobic(seq, 8, 2.5, 0, 30)
-	transmembrane_pep = hydrophobic(seq, 11, 2.0, 31, len(seq))
+	signal_pep = hydrophobic(seq[:30], 8, 2.5)
+	transmembrane_pep = hydrophobic(seq[30:], 11, 2.0)
 	if signal_pep and transmembrane_pep != None:
 		counts += 1
 		print(defline) 
