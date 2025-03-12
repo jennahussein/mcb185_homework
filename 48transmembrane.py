@@ -5,19 +5,15 @@ import sequence
 import sys
 
 """
-hydrophobic signal near N terminus
-signal = 8 aa long, average kd >= 2.5, in the first 30 aas
-other hydrophobic regions to cross plasma membrane
-transmembrane region = 11 aa long, avg kd >= 2.0, after 30 aas
-signal and transmembrane do not have proline
+seq = E. coli sequence
+s = length of the sequence
+kdt = kyte-doolittle hydrophobicity threshhold
 """
 
-fasta_file = sys.argv[1]
-
-def hydrophobic(seq, l, kdt, beg, end):
+def hydrophobic(seq, s, kdt, beg, end):
 	subseq = seq[beg:end + 1]
-	for i in range(0, len(subseq) - l + 1):
-		p = subseq[i:i+l]
+	for i in range(0, len(subseq) - s + 1):
+		p = subseq[i:i+s]
 		score = 0
 		if 'P' in p: continue
 		for aa in p:
@@ -40,17 +36,16 @@ def hydrophobic(seq, l, kdt, beg, end):
 			elif aa == 'N': score -= 3.5
 			elif aa == 'K': score -= 3.9
 			elif aa == 'R': score -= 4.5
-		avg_kd = score / l
+		avg_kd = score / s
 		if avg_kd >= kdt:
 			return p
-			break
+			break	
 
+counts = 0
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
 	signal_pep = hydrophobic(seq, 8, 2.5, 0, 30)
 	transmembrane_pep = hydrophobic(seq, 11, 2.0, 31, len(seq))
-	if signal_pep and transmembrane_pep is not None:
+	if signal_pep and transmembrane_pep != None:
+		counts += 1
 		print(defline) 
-
-			
-		
-		
+print(counts)
