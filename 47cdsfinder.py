@@ -16,7 +16,7 @@ min_length = int(sys.argv[2])
 def cdsfinder(dna, min_length):
 	for frame in range(3):
 		proteins = 0
-		translation = mcb185.translate(dna, frame = 3)
+		translation = mcb185.translate(dna, frame)
 		orfs = translation.split('*')
 		for orf in orfs:
 			if 'M' not in orf: continue
@@ -26,9 +26,8 @@ def cdsfinder(dna, min_length):
 				print('>', defline, '-protein-', proteins, sep='')
 				print(protein)
 				proteins += 1
-				sys.exit()
-
-
+	
+		
 for defline, dna in mcb185.read_fasta(sys.argv[1]):
 	defwords = defline.split()
 	name = defwords[0]
