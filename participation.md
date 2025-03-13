@@ -73,7 +73,7 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Attended class on Thursday
 	+ Joined Coderie in Discord
 	+ Met Catalina in class on Thursday
-	+ Met Jedikayle in class on Thursday
+	+ Asked/answered a question in Discord
 	+ Total 5 points
 - Week 9
 	+ Attended class on Tuesday
