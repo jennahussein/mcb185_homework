@@ -4,12 +4,6 @@ import argparse
 import itertools
 import mcb185
 
-"""
-search seqs for smallest missing kmer, start k at 1
-only report missing kmer
-stop after finding k with missing kmers
-search both strands
-"""
 parser = argparse.ArgumentParser(description='Kmer Finder')
 parser.add_argument('file', type=str, help='name of fasta file')
 arg = parser.parse_args()
@@ -19,7 +13,6 @@ missing_kmer = 0
 missing_kmers = []
 kcount = {}
 
-#gives me a count of all the kmers in my seq
 def kmers(seq, k):
 	for i in range(len(seq) -k +1):
 		kmer = seq[i:i+k]
