@@ -27,13 +27,6 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
 print(total_gc / total_nt)
 
 
-"""
-seq a  c  g  t  gc
-1   5  5  5  5  0.5
-2   5  10 10 5 0.67
-3   5  0  0  15  0
-4   99 0  0  99  0
-
 #modified program to report avg gc over all seqs
 total_gc = 0
 total_seqs = 0
@@ -96,9 +89,9 @@ for n in counts: print(n/len(seq), end=' ')
 print()
 
 
-each nt from the sequence is compared to the alphabet in nts. 
-if the letter is found, its index is returned
-if the letter is a G the index in 'ACGT' is 2 and the code does counts[2] += 1
+#each nt from the sequence is compared to the alphabet in nts. 
+#if the letter is found, its index is returned
+#if the letter is a G the index in 'ACGT' is 2 and the code does counts[2] += 1
 
 
 #counting any letter
@@ -129,5 +122,5 @@ print(name, end=' ')
 for nt in 'ACGTN':
 	print(seq.count(nt) / len(seq), end=' ')
 print()
-"""
+
 	
