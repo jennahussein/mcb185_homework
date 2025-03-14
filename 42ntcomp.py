@@ -1,19 +1,55 @@
 #42ntcomp.py by Jenna Hussein
 
 import sys
+import sequence
+import math
 import mcb185
 
 #write a program that calculates the composition of nucleotides in a FASTA file
 
 #gc composition
+
+#report GC per seq
+total_gc = 0
+total_nt = 0
+gcs = []
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
 	defwords = defline.split()
 	name = defwords[0]
 	gc = 0
 	for nt in seq:
 		if nt == 'C' or nt == 'G': gc += 1
-	print(name, gc/len(seq))
+	total_gc += gc
+	gcs.append(gc)
+	total_nt += len(seq)
+	length = len(gcs)
+	print(name, gc/len(seq), total_gc, sum(gcs)/length) 
+print(total_gc / total_nt)
 
+
+"""
+seq a  c  g  t  gc
+1   5  5  5  5  0.5
+2   5  10 10 5 0.67
+3   5  0  0  15  0
+4   99 0  0  99  0
+
+#modified program to report avg gc over all seqs
+total_gc = 0
+total_seqs = 0
+
+for defline, seq in mcb185.read_fasta(sys.argv[1]):
+	defwords = defline.split()
+	names = defwords[0]
+	print(names)
+	gc = 0
+	for nt in seq:
+		if nt == 'C' or nt == 'G': gc += 1
+	total_gc += gc
+	total_seqs += 1
+print(gc/len(seq), total_gc, total_seqs, total_gc/total_seqs)
+"""
+"""
 #individual variable
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
 	defwords = defline.split()
@@ -58,11 +94,13 @@ for nt in seq:
 print(name, end=' ')
 for n in counts: print(n/len(seq), end=' ')
 print()
-"""
+
+
 each nt from the sequence is compared to the alphabet in nts. 
 if the letter is found, its index is returned
 if the letter is a G the index in 'ACGT' is 2 and the code does counts[2] += 1
-"""
+
+
 #counting any letter
 #alphabet contianer has to be a list (mutable) to count all letters
 
@@ -91,3 +129,5 @@ print(name, end=' ')
 for nt in 'ACGTN':
 	print(seq.count(nt) / len(seq), end=' ')
 print()
+"""
+	
