@@ -87,3 +87,5 @@ more than one point per category. There is a maximum of 5 points each week.
 	+ Met Sophia in class on Tuesday
 	+ Joined Cat's coderie on Wednesday
 	+ Total 3 points
+
+Total = 40 points
